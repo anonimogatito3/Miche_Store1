@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>MICHE STORE - Viste tu estilo, marca la diferencia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-encabezado">
+            <a class="enlace-logo">
+                <span>MICHE</span>
+                <span class="texto-store">STORE</span>
+            </a>
+            <nav class="menu-navegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#colecciones">Colecciones</a>
+                <a href="#ofertas">Ofertas</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <div class="contenedor-iconos">
+                <button aria-label="Abrir buscador" class="boton-busqueda" id="loggle-search-btn">
+                    <svg class="icono-busqueda" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                    </svg>
+                </button>
+                <button aria-label="Ver carrito" class="boton-carrito" id="open-cart-btn">
+                    <svg class="icono-carrito" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                    </svg>
+                    <span class="contador-carrito" id="cart-counter">0</span>
+                </button>
+                <button aria-label="Abrir menú" class="boton-menu-movil" id="mobile-menu-btn">
+                    <svg class="icono-menu" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="barra-busqueda" id="search-bar-dropdown">
+
+            <div class="contenedor-busqueda">
+                <input class="campo-busqueda" id="header-search-input" placeholder="Buscar poleras, sudaderas, chaquetas, pantalones..." type="text">
+                <svg class="icono-busqueda-dropdown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+            </div>
+        </div>
+
+        <nav class="menu-movil" id="mobile-nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#colecciones">Colecciones</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="seccion-hero" id="inicio">
+
+        <div class="brillo brillo-amarillo"></div>
+        <div class="brillo brillo-azul"></div>
+
+        <div class="contenedor-hero">
+
+            <div class="contenido-hero">
+                <span class="etiqueta-hero">MODA MASCULINA · ESTILO URBANO</span>
+                <h1 class="titulo-hero">MICHE <br>
+                    <span>STORE</span>
+                </h1>
+                <p class="descripcion-hero">
+                    Moda urbana para personas que quieren expresar su personalidad a través del anime.
+                    Ropa urbana inspirada en personajes y series de anime.
+                </p>
+
+                <div class="botones-hero">
+                    <a class="boton-productos" href="#productos">Ver productos
+                        <svg class="icono-flecha" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+                        </svg>
+                    </a>
+                    <a class="boton-colecciones" href="#colecciones">Explorar Colecciones</a>
+                </div>
+
+                <div class="indicadores-hero">
+                    <span class="indicador activo"></span>
+                    <span class="indicador"></span>
+                    <span class="indicador"></span>
+                </div>
+
+            </div>
+
+            <div class="visual-hero">
+
+                <div class="tarjeta-hero">
+                    <img
+                        class="imagen-hero"
+                        src="img/pantalones/portada 1.jpg"
+                        alt="Modelos Urban Style con ropa streetwear moderna"
+                    >
+
+                    <div class="degradado-hero"></div>
+
+                    <div class="informacion-imagen">
+                        <p class="titulo-coleccion">Nueva Colección 2026</p>
+                        <p class="texto-coleccion">Combinación de diseños anime con tendencias modernas.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="seccion-catalogo" id="productos">
+
+        <div class="contenedor-catalogo">
+
+            <div class="encabezado-catalogo">
+                <h2 class="titulo-catalogo">
+                    <span>Catálogo</span>
+                    <span class="texto-amarillo">Completo</span>
+                </h2>
+                <p class="descripcion-catalogo">
+                    Viste a tu estilo y gusto entre poleras, sudaderas, chaquetas y pantalones de personajes o series que te gustan.
+                </p>
+            </div>
+
+            <div class="distribucion-catalogo">
+
+                <aside class="panel-filtros">
+
+                    <div class="titulo-filtros">
+                        <h3>
+                            <svg class="icono-filtro" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2">
+                                </path>
+                            </svg>
+                            Filtros
+                        </h3>
+                        <button class="boton-limpiar" id="reset-filters-btn" type="button">Limpiar</button>
+                    </div>
+
+                    <div class="grupo-filtro">
+                        <label class="etiqueta-filtro" for="catalog-search">Buscador</label>
+
+                        <div class="campo-buscador">
+                            <input
+                                id="catalog-search"
+                                type="text"
+                                placeholder="Buscar productos..."
+                            >
+
+                            <svg class="icono-buscador"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                aria-hidden="true">
+                                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2">
+                                </path>
+                            </svg>
+                        </div>
+
+                    </div>
+
+                    <div class="grupo-filtro">
+                        <label class="etiqueta-filtro">Categorías</label>
+
+                        <div class="grupo-categorias" id="category-radio-group">
+                            <label class="opcion-categoria">
+                                <input checked type="radio"
+                                    name="filter-cat" value="all">
+                                <span>Todos</span>
+                            </label>
+                            <label class="opcion-categoria">
+                                <input type="radio"
+                                    name="filter-cat" value="poleras">
+                                <span>Poleras</span>
+                            </label>
+                            <label class="opcion-categoria">
+                                <input type="radio"
+                                    name="filter-cat" value="sudaderas">
+                                <span>Sudaderas / Suéteres</span>
+                            </label>
+                            <label class="opcion-categoria">
+                                <input type="radio"
+                                    name="filter-cat" value="chaquetas">
+                                <span>Chaquetas / Chamarras</span>
+                            </label>
+                            <label class="opcion-categoria">
+                                <input type="radio"
+                                    name="filter-cat" value="pantalones">
+                                <span>Pantalones</span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="grupo-filtro">
+                        <label class="etiqueta-filtro">Tallas</label>
+
+                        <div class="filtro-tallas" id="size-filter-container">
+                            <button type="button" class="size-pill active-size" data-size="all">Todas</button>
+                            <button type="button" class="size-pill" data-size="S">S</button>
+                            <button type="button" class="size-pill" data-size="M">M</button>
+                            <button type="button" class="size-pill" data-size="L">L</button>
+                            <button type="button" class="size-pill" data-size="XL">XL</button>
+                        </div>
+
+                    </div>
+
+                    <div class="grupo-filtro">
+
+                        <div class="encabezado-precio">
+                            <label class="etiqueta-filtro" for="price-range">Precio Máximo</label>
+                            <span id="price-range-label">Bs. 500,00</span>
+                        </div>
+
+                        <input
+                            class="control-precio"
+                            id="price-range"
+                            type="range"
+                            min="10"
+                            max="500"
+                            step="10"
+                            value="500"
+                        >
+
+                        <div class="limites-precio">
+                            <span>Bs. 10</span>
+                            <span>Bs. 500</span>
+                        </div>
+
+                    </div>
+                </aside>
+
+                <div class="contenido-catalogo">
+
+                    <div class="barra-resultados">
+                        <span id="product-count">Mostrando productos...</span>
+                    </div>
+
+                    <div class="cuadricula-productos" id="product-grid"></div>
+
+                    <div class="catalogo-vacio" id="empty-catalog">
+                        <svg class="icono-vacio"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <path d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2">
+                            </path>
+                        </svg>
+                        <p class="texto-vacio">No se encontraron productos coincidentes</p>
+                        <p class="ayuda-vacio">Intenta ajustando los filtros o realizando otra búsqueda.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="seccion-colecciones" id="colecciones">
+
+        <div class="contenedor-colecciones">
+
+            <div class="encabezado-colecciones">
+                <h2>Nuestras Colecciones</h2>
+                <p>Explora las cuatro categorías de ropa masculina de MICHE STORE.</p>
+            </div>
+
+            <div class="rejilla-colecciones">
+
+                <div class="tarjeta-coleccion"
+                    data-collection-filter="poleras"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Ver colección de poleras para hombre">
+                    <img
+                        src="img/pantalones/portada polera.jpg"
+                        alt="Poleras urbanas para hombre"
+                        class="imagen-coleccion"
+                    >
+
+                    <div class="degradado-coleccion"></div>
+
+                    <div class="contenido-coleccion">
+                        <h3>Poleras</h3>
+                        <span>Ver colección →</span>
+                    </div>
+
+                </div>
+
+                <div class="tarjeta-coleccion"
+                    data-collection-filter="sudaderas"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Ver colección de sudaderas y suéteres para hombre">
+                    <img
+                        src="img/Sudaderas/Chaqueta negra de punto con cruces metálicas.png"
+                        alt="Sudaderas y suéteres para hombre"
+                        class="imagen-coleccion"
+                    >
+
+                    <div class="degradado-coleccion"></div>
+
+                    <div class="contenido-coleccion">
+                        <h3>Sudaderas / Suéteres</h3>
+                        <span>Ver colección →</span>
+                    </div>
+
+                </div>
+
+                <div class="tarjeta-coleccion"
+                    data-collection-filter="chaquetas"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Ver colección de chaquetas y chamarras para hombre">
+                    <img
+                        src="img/Chaquetas/Chaqueta táctica negra con detalles reflectantes.png"
+                        alt="Chaquetas y chamarras para hombre"
+                        class="imagen-coleccion"
+                    >
+
+                    <div class="degradado-coleccion"></div>
+
+                    <div class="contenido-coleccion">
+                        <h3>Chaquetas / Chamarras</h3>
+                        <span>Ver colección →</span>
+                    </div>
+
+                </div>
+
+                <div class="tarjeta-coleccion"
+                    data-collection-filter="pantalones"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Ver colección de pantalones para hombre">
+                    <img
+                        src="img/Pantalones/Jeans negros con diseños gráficos traseros.png"
+                        alt="Pantalones urbanos para hombre"
+                        class="imagen-coleccion"
+                    >
+
+                    <div class="degradado-coleccion"></div>
+
+                    <div class="contenido-coleccion">
+                        <h3>Pantalones</h3>
+                        <span>Ver colección →</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="seccion-ofertas" id="ofertas">
+
+        <div class="contenedor-ofertas">
+
+            <div class="encabezado-ofertas">
+                <h2 class="titulo-ofertas">
+                    <span>Ofertas</span>
+                    <span class="texto-especial">Especiales</span>
+                </h2>
+                <p class="descripcion-ofertas">
+                    Aprovecha descuentos en las prendas seleccionadas por tiempo limitado.
+                </p>
+            </div>
+
+            <div class="rejilla-ofertas" id="offers-grid">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="seccion-nosotros" id="nosotros">
+
+        <div class="contenedor-nosotros">
+
+            <div class="distribucion-nosotros">
+
+                <div class="contenido-nosotros">
+                    <h2 class="titulo-nosotros">Sobre MICHE STORE</h2>
+                    <p class="frase-nosotros">Viste tu pasión. Expresa tu estilo.</p>
+                    <p class="descripcion-nosotros">
+                        Bienvenido a <strong>MICHE STORE</strong> un espacio donde el universo del anime se encuentra con la moda urbana.
+                        Creamos una colección de prendas inspiradas en personajes, historias y universos que han marcado generaciones. 
+                        Desde diseños minimalistas hasta estampados llamativos, cada prenda busca transmitir personalidad, creatividad y autenticidad.
+                        Poleras, sudaderas, chaquetas y pantalones forman parte de una colección pensada para quienes encuentran en el anime mucho más que entretenimiento: una forma de expresión.
+                        No sigas tendencias. Crea tu propio estilo.
+                    </p>
+
+                    <div class="rejilla-pilares">
+
+                        <div class="tarjeta-pilar">
+
+                            <div class="icono-pilar">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                    ></path>
+                                </svg>
+
+                            </div>
+
+                            <h3>Misión</h3>
+                            <p>
+                                Es ofrecer ropa inspirada en el anime que combine creatividad, 
+                                calidad y tendencias de moda urbana, permitiendo a nuestros clientes 
+                                expresar su personalidad y pasión por el mundo del anime.
+                            </p>
+                        </div>
+
+                        <div class="tarjeta-pilar">
+
+                            <div class="icono-pilar">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                    ></path>
+                                    <path
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                    ></path>
+                                </svg>
+                            </div>
+
+                            <h3>Visión</h3>
+                            <p>
+                                Ser una marca reconocida en el mercado de la moda urbana inspirada en 
+                                el anime, destacándonos por nuestros diseños, calidad y originalidad.
+                            </p>
+
+                        </div>
+
+                        <div class="tarjeta-pilar">
+
+                            <div class="icono-pilar">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                    ></path>
+                                </svg>
+
+                            </div>
+
+                            <h3>Valores</h3>
+                            <p>
+                                Calidad, compromiso, respeto, innovación
+                                constante y pasión por la moda urbana.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="visual-nosotros">
+
+                    <div class="marco-tienda">
+                        <img
+                            class="imagen-tienda"
+                            src="img/pantalones/portadaTienda.jpg"
+                            alt="Tienda física oficial URBAN STYLE con letrero neón"
+                        >
+
+                        <div class="degradado-tienda"></div>
+
+                        <div class="texto-tienda">
+                            <span>Flagship Store Oficial</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="seccion-contacto" id="contacto">
+
+        <div class="contenedor-contacto">
+
+            <div class="distribucion-contacto">
+
+                <div class="informacion-contacto">
+
+                    <div>
+                        <h2 class="titulo-contacto">Contáctanos</h2>
+                        <p class="descripcion-contacto">
+                            Estamos aquí para ayudarte. Envíanos un mensaje
+                            y te responderemos lo antes posible.
+                        </p>
+                    </div>
+
+                    <div class="lista-contacto">
+
+                        <div class="elemento-contacto">
+
+                            <div class="icono-contacto">
+                                <svg width="20" height="20" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2">
+                                    </path>
+                                    <path
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h4>Dirección</h4>
+                                <p>Av.2 4to anillo-Cambodromo, Santa Cruz - Bolivia</p>
+                            </div>
+
+                        </div>
+
+                        <div class="elemento-contacto">
+
+                            <div class="icono-contacto">
+                                <svg width="20" height="20" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+591 77531054 - +591 75785189</p>
+                            </div>
+
+                        </div>
+
+                        <div class="elemento-contacto">
+
+                            <div class="icono-contacto">
+                                <svg width="20" height="20" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h4>Correo</h4>
+                                <p>ventas@michestore.com</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="redes-contacto">
+                        <h4>Redes Sociales</h4>
+
+                        <div class="lista-redes">
+                            <a class="enlace-red" href="https://www.facebook.com/share/1Qss2cZDZ1/"
+                                aria-label="Facebook">
+                                <svg width="16" height="16"
+                                    viewBox="0 0 24 24" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+                                </svg>
+                            </a>
+                            <a class="enlace-red" href="https://www.instagram.com/joseantonio10202?rpxt=MXY0bDh3dHRzZDMyYw=="
+                                aria-label="Instagram">
+                                <svg width="16" height="16"
+                                    viewBox="0 0 24 24" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                                </svg>
+                            </a>
+                            <a class="enlace-red" href="https://www.tiktok.com/@rozco_u?_r=1&_t=ZS-9Ar3AbCGRKn"
+                                aria-label="TikTok">
+                                <svg width="16" height="16"
+                                    viewBox="0 0 24 24" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="formulario-contenedor">
+                    <form class="formulario-contacto" id="contact-form">
+
+                        <div class="alerta-contacto" id="contact-alert"
+                            role="status" aria-live="polite" hidden>
+                            ¡Gracias! Tu mensaje ha sido enviado correctamente.
+                            Responderemos pronto.
+                        </div>
+
+                        <div class="campo-contacto">
+                            <label for="contact-name">Nombre completo *</label>
+                            <input
+                                id="contact-name"
+                                name="nombre"
+                                type="text"
+                                placeholder="Tu nombre"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+                        <div class="campo-contacto">
+                            <label for="contact-email">Correo electrónico *</label>
+                            <input
+                                id="contact-email"
+                                name="correo"
+                                type="email"
+                                placeholder="tu@correo.com"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <div class="campo-contacto">
+                            <label for="contact-subject">Asunto *</label>
+                            <select id="contact-subject"
+                                name="asunto" required>
+                                <option disabled selected value="">Selecciona un asunto</option>
+                                <option value="consulta">Consulta de productos</option>
+                                <option value="pedidos">Estado de mi pedido</option>
+                                <option value="mayorista">Venta por mayor</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="campo-contacto">
+                            <label for="contact-message">Mensaje *</label>
+                            <textarea
+                                id="contact-message"
+                                name="mensaje"
+                                placeholder="Escribe tu mensaje..."
+                                rows="4"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button class="boton-enviar" type="submit">Enviar mensaje</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="pie-pagina">
+
+        <div class="contenedor-pie">
+
+            <div class="contenido-pie">
+
+                <div class="marca-pie">
+                    <a class="logo-pie" href="#inicio">MICHE <span>STORE</span></a>
+                    <p class="eslogan-pie">Viste tu estilo, marca la diferencia.</p>
+                </div>
+
+                <nav class="navegacion-pie" aria-label="Navegación del pie de página">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#productos">Productos</a>
+                    <a href="#colecciones">Colecciones</a>
+                    <a href="#ofertas">Ofertas</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+
+            </div>
+
+            <div class="inferior-pie">
+                <p>
+                    © 2026 MICHE STORE. Todos los derechos reservados.
+                </p>
+                <p>
+                    Hecho con pasión por el streetwear urbano.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <div class="fondo-carrito" id="cart-drawer-backdrop">
+
+        <div class="contenedor-carrito">
+
+            <div class="panel-carrito" id="cart-drawer-panel">
+
+                <div class="encabezado-carrito">
+                    <h3 class="titulo-carrito">
+                        <span>Tu carrito</span>
+                        <span class="cantidad-carrito" id="cart-title-count">(0)</span>
+                    </h3>
+                    <button
+                        type="button"
+                        aria-label="Cerrar carrito"
+                        class="boton-cerrar-carrito"
+                        id="close-cart-btn">
+                        <svg width="20" height="20"
+                            fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path d="M6 18L18 6M6 6l12 12"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="lista-productos-carrito"
+                    id="cart-items-container">
+                </div>
+                <div class="resumen-carrito">
+
+                    <div class="fila-resumen">
+                        <span>Subtotal</span>
+                        <span class="valor-subtotal" id="cart-subtotal">$0.00</span>
+                    </div>
+
+                    <div class="fila-resumen">
+                        <span>Envío</span>
+                        <span class="envio-gratis">Gratis</span>
+                    </div>
+
+                    <div class="fila-total">
+                        <span>Total</span>
+                        <span class="valor-total" id="cart-total">$0.00</span>
+                    </div>
+
+                    <div class="fila-resumen">
+                        <span>Método de pago</span>
+                        <span>Efectivo contra entrega</span>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="boton-finalizar-compra"
+                        id="checkout-btn">
+                        Finalizar compra
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="modal-pedido oculto" id="order-modal">
+
+        <div class="contenido-modal animate-fade-in">
+            <div class="icono-confirmacion">
+                <svg
+                    width="32"
+                    height="32"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path
+                        d="M5 13l4 4L19 7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2.5">
+                    </path>
+                </svg>
+            </div>
+
+            <h3 class="titulo-modal">¡Gracias por tu compra!</h3>
+            <p class="mensaje-modal">
+                Hemos recibido tu pedido. El pago será en efectivo contra entrega.
+                Te contactaremos por WhatsApp o correo para coordinar el envío.
+            </p>
+
+            <button
+                type="button"
+                class="boton-entendido"
+                id="close-modal-btn">
+                Entendido
+            </button>
+        </div>
+    </div>
+    <div
+        class="vista-producto-modal oculto"
+        id="product-preview-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="product-preview-name"
+        aria-hidden="true">
+        <div class="contenido-vista-producto">
+            <button
+                type="button"
+                class="boton-cerrar-vista-producto-js"
+                aria-label="Cerrar vista ampliada">
+                &times;
+            </button>
+            <img class="imagen-vista-producto" id="product-preview-image" alt="">
+            <div class="datos-vista-producto">
+                <span class="categoria-vista-producto" id="product-preview-category"></span>
+                <h2 id="product-preview-name"></h2>
+                <span class="precio-vista-producto" id="product-preview-price"></span>
+            </div>
+        </div>
+    </div>
+    <script src="js/productos.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
